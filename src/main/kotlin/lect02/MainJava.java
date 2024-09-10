@@ -1,4 +1,4 @@
-package oop_01;
+package lect02;
 
 public class MainJava {
 

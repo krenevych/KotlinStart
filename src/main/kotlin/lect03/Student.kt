@@ -1,4 +1,4 @@
-package oop_02
+package lect03
 
 open class Student(
     name: String,

@@ -1,4 +1,4 @@
-package oop_01
+package lect02
 
 fun fun1() {
     val n: Int = 12

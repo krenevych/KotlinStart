@@ -1,4 +1,4 @@
-package oop_02
+package lect03
 
 data class Person(
     var name: String = "",

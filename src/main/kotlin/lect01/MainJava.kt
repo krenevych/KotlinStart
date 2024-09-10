@@ -1,4 +1,6 @@
-package start
-    fun main(args: Array<String>) {
-        println("Hello, world from Java")
-    }
+package lect01
+
+
+fun main(args: Array<String>) {
+    println("Hello, world from Java")
+}
