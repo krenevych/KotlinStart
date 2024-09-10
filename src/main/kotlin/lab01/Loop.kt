@@ -1,4 +1,4 @@
-package org.example.Lab01
+package lab01
 
 //fun isPrime(n: Int): Boolean {
 //    for (i in 2..<n) {

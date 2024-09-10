@@ -1,4 +1,4 @@
-package org.example.Lab02
+package lab02
 
 fun uppercaseString(text: String): String {
     return text.uppercase()

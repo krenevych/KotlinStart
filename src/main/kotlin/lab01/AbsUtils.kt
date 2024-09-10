@@ -1,4 +1,4 @@
-package org.example.Lab01
+package lab01
 
 //fun abs(n: Int): Int {
 //    val absX = if (n >= 0) n else -n

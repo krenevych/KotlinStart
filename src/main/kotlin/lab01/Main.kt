@@ -1,4 +1,4 @@
-package org.example.Lab01
+package lab01
 
 fun main() {
     // Визначити модуль цілого числа
