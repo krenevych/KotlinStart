@@ -1,58 +1,52 @@
 package lab04
 
-class Triangle  {
+class Triangle(a: Double,
+               b: Double,
+               c: Double) {
 
-    var a: Double
-//        set(value) {
-////            if (checkEdges(value, b, c)) {
-//                field = value
-////            }
-//        }
+    var a: Double = a
+        set(value) {
+            println("set_a")
+            if (checkEdges(value, b, c)) {
+                field = value
+            }
+        }
 
-    var b: Double
-//        set(value) {
-//            if (checkEdges(a, value, c)) {
-//                field = value
-//            }
-//        }
+    var b: Double = b
+        set(value) {
+            println("set_b")
+            if (checkEdges(a, value, c)) {
+                field = value
+            }
+        }
 
-    var c: Double
-//        set(value) {
-//            if (checkEdges(a, b, value)) {
-//                field = value
-//            }
-//        }
+    var c: Double = c
+        set(value) {
+            println("set_c")
+            if (checkEdges(a, b, value)) {
+                field = value
+            }
+        }
 
-    constructor (
-        a: Double,
-        b: Double,
-        c: Double,
-    ) {
+    init {
         if (!checkEdges(a, b, c)) throw IllegalArgumentException()
-
-        this.a = a
-        this.b = b
-        this.c = c
     }
 
     constructor (
         a: Int,
         b: Int,
         c: Int,
-    ) : this(a.toDouble(), b.toDouble(), c.toDouble()) {
+    ) : this(a.toDouble(), b.toDouble(), c.toDouble())
 
+    override fun toString(): String {
+        return "Triangle(a=$a, b=$b, c=$c)"
     }
-
 
     val perimetr
         get() = a + b + c
 
-    override fun toString(): String {
-        return "Triangle: $a, $b, $c"
-    }
 
     companion object { // статика
-
         fun checkEdges(a: Double,
                        b: Double,
                        c: Double,): Boolean {
