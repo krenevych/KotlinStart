@@ -9,7 +9,7 @@ import lab7.Figure
 class Triangle(val a: Double, val b: Double, val c: Double) : Figure() {
     override val dimension = 2
     override val volume = square()
-//        get() = square() // if a, b, c defined as var!!!!!!
+//        get() = square() // if a, b, c defined as var!
 
     override fun perimeter() = a + b + c
 
